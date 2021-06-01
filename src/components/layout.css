@@ -5,12 +5,18 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
 }
+
+:root {
+  --text-secondary: rgba(120, 120, 120);
+  --padding_size: 20px;
+  --layout_width_size_large: 1200px;
+}
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: sans-serif, serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
@@ -71,6 +77,12 @@ strong {
 dfn {
   font-style: italic;
 }
+p {
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
 h1 {
   margin-left: 0;
   margin-right: 0;
@@ -79,7 +91,7 @@ h1 {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 1.5rem;
   color: inherit;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
@@ -397,7 +409,7 @@ p {
   padding-left: 0;
   padding-right: 0;
   padding-top: 0;
-  margin-bottom: 1.45rem;
+  margin-bottom: 0;
 }
 pre {
   margin-left: 0;
