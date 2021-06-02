@@ -1,10 +1,7 @@
 import * as React from "react"
 import PropTypes from "prop-types"
-// import { Link } from "gatsby"
-import styled from "styled-components"
-import mq from "../utils/mediaQuery"
 
-console.log(mq)
+import styled from "styled-components"
 
 const NavBar = styled.nav`
   padding: var(--padding_size);
@@ -24,6 +21,7 @@ const NavItemContainer = styled.div`
 `
 
 const NavItem = styled.div`
+  color: rgba(70, 70, 70);
   flex-basis: 100px;
   margin: 10px;
   font-size: 15px;
@@ -35,10 +33,14 @@ const Header = ({ siteTitle }) => (
         <NavItem>mawin.boonwi@gmail.com</NavItem>
       </NavItemContainer>
       <NavItemContainer>
-        <NavItem>Works</NavItem>
-        <NavItem>Resume</NavItem>
-        <NavItem>Contact</NavItem>
+        <a href="#project">
+          <NavItem>Works</NavItem>
+        </a>
 
+        <a href="#resume">
+          <NavItem>Resume</NavItem>
+        </a>
+        <NavItem>Contact</NavItem>
       </NavItemContainer>
     </NavBar>
   </header>

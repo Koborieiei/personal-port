@@ -26,13 +26,6 @@ const SecondaryText = styled.p`
   font-size: 1em;
 `
 
-const LanguagesContainer = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-
-  flex: 200px 20px 20px;
-`
-
 const TimeDurationText = styled.p`
   font-size: 1em;
   color: var(--text-secondary);
@@ -65,16 +58,16 @@ export default function ResumeSection({ id }) {
             <TopicHeader>Languages</TopicHeader>
 
             <ul>
-              <li>
+              <li key="1">
                 <SecondaryText>HTML</SecondaryText>
               </li>
-              <li>
+              <li key="2">
                 <SecondaryText>CSS</SecondaryText>
               </li>
-              <li>
+              <li key="3">
                 <SecondaryText>Javascript</SecondaryText>
               </li>
-              <li>
+              <li key="4">
                 <SecondaryText>PHP</SecondaryText>
               </li>
             </ul>

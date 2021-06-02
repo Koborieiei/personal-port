@@ -67,9 +67,9 @@ export default function ResumeSection({ id }) {
         <HeroText>Github</HeroText>
         <GridRow column={3} height="100%">
           {isLoading ? (
-            githubrepos.map(repo => (
-              <a href={repo.link}>
-                <GithubComponent key={repo.repo}>
+            githubrepos.map((repo, index) => (
+              <a key={index} href={repo.link}>
+                <GithubComponent>
                   <TopicHeader>{repo.repo}</TopicHeader>
                   <SecondaryText>{repo.description}</SecondaryText>
                 </GithubComponent>
