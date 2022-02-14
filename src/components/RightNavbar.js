@@ -69,7 +69,6 @@ export const LogoUl = styled.h2`
 `
 
 export default function RightNavbar({ isopen }) {
-  console.log(isopen)
   return (
     <StyledUl open={isopen}>
       <li>
