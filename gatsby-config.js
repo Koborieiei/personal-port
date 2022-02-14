@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `Know me better`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    description: `Hi I'm Mawin Boonwitaya, wanted to know me better let check it out.`,
+    author: `@Mawin Boonwitaya`,
   },
   pathPrefix: `/personal-port`,
 
@@ -31,6 +31,7 @@ module.exports = {
       },
     },
     `gatsby-plugin-gatsby-cloud`,
+    `gatsby-plugin-styled-components`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
