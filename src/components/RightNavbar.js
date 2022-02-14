@@ -82,7 +82,7 @@ export default function RightNavbar({ isopen }) {
         <a href="#project">Project</a>
       </li>
       <li>
-        <a>Contact</a>
+        <a href="#">Contact</a>
       </li>
     </StyledUl>
   )
