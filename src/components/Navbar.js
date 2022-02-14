@@ -2,7 +2,6 @@ import * as React from "react"
 import PropTypes from "prop-types"
 import styled from "styled-components"
 import BurgerMenu from "./BurgerMenu"
-import RightNavbar from "./RightNavbar"
 
 const NavBar = styled.nav`
   height: 70px;
@@ -46,18 +45,14 @@ export const Logo = styled.h5`
   }
 `
 
-const Navbar = ({ siteTitle }) => {
-  // const [isNavbarOpen, setisNavbarOpen] = useState(false)
+const Navbar = () => {
 
   return (
     <header>
       <NavBar>
         <Logo>mawin.boonwi@gmail.com</Logo>
-        {/* dfdf */}
         <BurgerMenu />
       </NavBar>
-
-      {/* <RightNavbar /> */}
     </header>
   )
 }
