@@ -9,6 +9,7 @@ import VisdSnapshot from "../assets/dribble-visd.png"
 const Section = styled.section`
   margin-bottom: 60px;
 `
+
 const Container = styled.div`
   margin: 0 auto;
   padding: var(--padding_size);
@@ -24,6 +25,16 @@ const SecondaryText = styled.h2`
   margin-bottom: 20px;
 
   margin-top: 20px;
+
+  a {
+    color: var(--secondary-text);
+  }
+  a:visited {
+    color: var(--secondary-text);
+  }
+  a:hover {
+    color: var(--text-secondary);
+  }
 `
 
 const DescriptionText = styled.p`
@@ -92,15 +103,19 @@ export default function SectionIntro({ id }) {
           </GridRow>
           <GridRow column="1" maxWidth="70%" height="auto">
             <SecondaryText>
-              Visd Project <small>(Department Land Transport</small>
+              <a href="https://visd.in.th" target="_blank">
+                <u>
+                  Visd Project <small>(Department Land Transport)</small>
+                </u>
+              </a>
             </SecondaryText>
 
             <DescriptionText>
-              This project I have involve in design interface and re-adjust some
-              of those components, further more I build server side to mutate
-              the data. The product have been create to track the user who are
-              learning, and who wanted to make a payment. (Project is not able
-              to share source code, I'm sorry for this inconvenience)
+              The product have been create to track the user who are learning,
+              and who wanted to make a payment, and I involved in design
+              interface and re-adjust some of those components, further more I
+              build server side with PHP to mutate the data. (Project is
+              not able to share source code, I'm sorry for this inconvenience).
             </DescriptionText>
           </GridRow>
         </div>
