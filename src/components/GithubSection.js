@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { GridRow } from "./GridRow"
-import mq from "../utils/mediaQuery"
 import styled from "styled-components"
 import axios from "axios"
 
@@ -18,8 +17,6 @@ const HeroText = styled.h1``
 const TopicHeader = styled.h3`
   color: rgba(70, 70, 70);
 `
-
-const GridItem = styled.div``
 
 const SecondaryText = styled.p`
   font-size: 1em;
@@ -44,9 +41,10 @@ const GithubComponent = styled.div`
 export default function ResumeSection({ id }) {
   const [githubrepos, setRepoData] = useState({})
   const [isLoading, setIsLoading] = useState(false)
+  const githubRepositoryUrl = `https://gh-pinned-repos.egoist.sh/?username=koborieiei`;
   const getGithubRepo = async () => {
     const req = await axios.get(
-      "https://gh-pinned-repos-5l2i19um3.vercel.app/?username=koborieiei"
+      githubRepositoryUrl
     )
     const data = await req.data
     setRepoData(data)
