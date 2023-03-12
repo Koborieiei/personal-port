@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: personal-port
+  annotations:
+    github.com/project-slug: Koborieiei/personal-port
+spec:
+  type: other
+  lifecycle: unknown
+  owner: Mawin
